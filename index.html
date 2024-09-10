@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>* Interactive Resume Builder *</h1>
+
+    <!-- Form to capture user input -->
+    <form id="resumeForm">
+      <h3>Personal Information</h3>
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="address" placeholder="Address" />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+      <input type="file" id="profilePicture" />
+
+      <h3>Education</h3>
+      <textarea
+        id="education"
+        placeholder="Enter your education details"
+        required
+      ></textarea>
+
+      <h3>Work Experience</h3>
+      <textarea
+        id="workExperience"
+        placeholder="Enter your work experience"
+        required
+      ></textarea>
+
+      <h3>Skills</h3>
+      <textarea id="skills" placeholder="Enter your skills" required></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <!-- Dynamic Resume Output -->
+    <div id="resumeOutput"></div>
+
+    <button id="downloadResume" class="hidden">Download as PDF</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
